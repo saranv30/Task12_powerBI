@@ -1,0 +1,17 @@
+Task 12 - Power Query Transformation Notes
+Dataset: IBM HR Analytics Employee Attrition & Performance (Kaggle)
+Rows/Columns: ~1470 rows, 35 columns originally
+
+Key Transformations:
+- Renamed columns e.g. 'MonthlyIncome' kept, 'EmployeeCount' removed
+- Removed constant columns: EmployeeCount, Over18, StandardHours
+- Fixed data types: Age, MonthlyIncome, etc. to appropriate types
+- Created conditional columns:
+  - AgeGroup: Under 25 / 25-35 / 36-45 / 46+
+  - SalaryBand: Low (<4k) / Medium (4-8k) / High (8-12k) / Very High
+  - AttritionFlag: 1 for Yes, 0 for No
+- No major missing values found; replaced any blanks with 'Unknown' where needed
+- Observations: Highest attrition in Sales dept, younger employees (25-35) show more attrition when OverTime=Yes
+
+Prepared by: Saran
+Date: February 2026
